@@ -21,8 +21,8 @@ jobs:
           - 3306:3306
       env:
         MYSQL_DATABASE: 'laravel_app'
-        MYSQL_USER: ${{ env.DB_USERNAME }}
-        MYSQL_PASSWORD: ${{ env.DB_PASSWORD }}
+        MYSQL_USER: 'sail'
+        MYSQL_PASSWORD: 'password'
         MYSQL_ALLOW_EMPTY_PASSWORD: 1
       options: >-
         --health-cmd "mysqladmin ping"
